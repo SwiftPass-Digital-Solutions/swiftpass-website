@@ -71,7 +71,10 @@ export default function Navigation() {
 
           {/* Desktop Button - Hidden on mobile */}
           <div className="hidden md:block">
-            <Button>
+            <Button
+              isLink
+              linkUrl="https://swiftpass-web.vercel.app/register"
+            >
               Get Started
             </Button>
           </div>

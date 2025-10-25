@@ -1,18 +1,23 @@
+'use client';
 import { ButtonHTMLAttributes, ReactNode } from 'react';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
   children: ReactNode;
   className?: string;
+  isLink?: boolean;
+  linkUrl?: string;
 }
 
 export default function Button({ 
   variant = 'primary', 
   children, 
   className = '', 
+  isLink = false,
+  linkUrl = '',
   ...props 
 }: ButtonProps) {
-  const baseStyles = 'inline-flex items-center justify-center font-medium rounded-lg py-3 px-6 disabled:cursor-not-allowed';
+  const baseStyles = 'inline-flex items-center justify-center font-medium rounded-lg py-3 px-6 cursor-pointer disabled:cursor-not-allowed';
   
   const variants = {
     primary: 'bg-primary-500 text-white border-primary-400 shadow-[0px_4px_0px_0px_#05175F]',
@@ -24,7 +29,7 @@ export default function Button({
   const classes = `${baseStyles} ${variants[variant]} ${className}`;
   
   return (
-    <button className={classes} {...props}>
+    <button onClick={isLink ? () => window.open(linkUrl, '_blank') : undefined} className={classes} {...props}>
       {children}
     </button>
   );

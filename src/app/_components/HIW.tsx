@@ -1,4 +1,3 @@
-import { title } from "process";
 import Button from "../components/ui/Button";
 
 export default function HIW() {
@@ -54,7 +53,12 @@ export default function HIW() {
               <p className="text-dark-200 text-sm">{step.description}</p>
             </div>
             <div>
-              <Button>{step.buttonText}</Button>
+              <Button
+                isLink
+                linkUrl="https://swiftpass-web.vercel.app/register"
+              >
+                {step.buttonText}
+              </Button>
             </div>
           </div>
         ))}

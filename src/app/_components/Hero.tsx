@@ -1,8 +1,9 @@
+'use client';
 import Button from "../components/ui/Button";
 
 export default function Hero() {
   return (
-    <section className="bg-gradient-to-r from-primary-400 to-primary-500 text-white pt-41 pl-6">
+    <section className="bg-gradient-to-r from-primary-400 to-primary-500 text-white pl-6">
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 overflow-hidden">
             <div className="flex flex-col gap-8 w-full md:w-[380px] lg:w-[431px] flex-shrink-0 pb-6 pr-6 md:pr-0 md:pb-0">
                 <div className="flex flex-col gap-3">
@@ -14,7 +15,10 @@ export default function Hero() {
                     </p>
                 </div>
                 <div>
-                    <Button>
+                    <Button
+                        isLink
+                        linkUrl="https://swiftpass-web.vercel.app/register"
+                    >
                         Get Started
                     </Button>
                 </div>

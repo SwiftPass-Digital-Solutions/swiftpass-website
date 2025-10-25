@@ -1,11 +1,9 @@
-import PersonalHero from './_components/PersonalHero';
-import PersonalFeatures from './_components/PersonalFeatures';
+import Hero from "./_components/Hero";
 
 export default function Individuals() {
   return (
     <div>
-      {/* <PersonalHero />
-      <PersonalFeatures /> */}
+      <Hero />
     </div>
   );
 }

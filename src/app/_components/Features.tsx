@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Button from '../components/ui/Button';
 
 export default function Features() {
@@ -60,7 +59,10 @@ export default function Features() {
               </h3>
               <p className="text-xl text-dark-400">{feature.description}</p>
               <div>
-                <Button>
+                <Button
+                  isLink
+                  linkUrl="https://swiftpass-web.vercel.app/register"
+                >
                   {feature.buttonText}
                 </Button>
               </div>
