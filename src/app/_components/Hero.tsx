@@ -14,7 +14,7 @@ export default function Hero() {
                     </p>
                 </div>
                 <div>
-                    <Button variant="secondary">
+                    <Button>
                         Get Started
                     </Button>
                 </div>
