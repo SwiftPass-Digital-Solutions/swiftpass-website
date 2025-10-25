@@ -46,7 +46,7 @@ export default function Footer() {
                 <h6 className="font-medium text-base md:text-lg text-dark-50 mb-2">Subscribe to our newsletter</h6>
                 <p className="text-sm md:text-base text-dark-900">Funding freemium long tail hypotheses first mover advantage assets ownership</p>
                 <div className="mt-6 lg:mt-10 flex flex-col md:flex-row gap-3">
-                    <input type="email" placeholder="Enter your email" className="flex-1 border border-[#E6E6E6] rounded-xl p-4" />
+                    <input type="email" placeholder="Enter your email" className="flex-1 bg-white border border-[#E6E6E6] rounded-xl p-4" />
                     <div>
                         <button className="bg-primary-500 text-white text-sm rounded-xl p-4">Subscribe</button>
                     </div>
