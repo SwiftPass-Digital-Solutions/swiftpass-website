@@ -20,7 +20,7 @@ export default function Benefit() {
         },
         {
             caption: "Scales easily across multiple user bases and apps",
-            image: "phone2.svg",
+            image: "phone2.png",
             backgroundColor: "#FAFAFA",
             borderColor: "#DFDFDF"
         }

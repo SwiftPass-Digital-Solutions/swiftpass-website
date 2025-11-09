@@ -21,15 +21,15 @@ export default function DE() {
         </span>
       </h3>
 
-      <div className="flex flex-col lg:flex-row justify-between items-center gap-10">
-        <div>
-          <ul className="list-disc ml-4 lg:[&>li]:text-xl [&>li]:mb-6 mb-8">
+      <div className="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-40 overflow-x-hidden">
+        <div className="lg:min-w-md lg:flex-shrink-0 lg:z-10">
+          <ul className="list-disc ml-4 lg:[&>li]:text-xl [&>li]:tracking-[-3%] [&>li]:mb-6 mb-8">
             <li>Clear documentation with examples</li>
             <li>Sandbox & production environments</li>
             <li>Security protocols (OAuth, encryption standards)</li>
           </ul>
 
-          <div className="flex flex-col justify-start items-start lg:items-center gap-5 md:flex-row">
+          <div className="flex flex-col justify-start items-start md:items-center gap-5 md:flex-row">
             <Button
               className="w-[217px] h-[55px]"
               isLink
@@ -45,7 +45,9 @@ export default function DE() {
             </a>
           </div>
         </div>
-        <img className="mt-5 lg:mt-0 rounded-3xl" src="business_dashboard.png" alt="Dashboard Overview" style={{ boxShadow: '-6px 4px 32px 0px rgba(142, 142, 142, 0.25)' }}  />
+        <div className="relative w-full lg:w-auto lg:flex-1 overflow-hidden rounded-l-3xl lg:rounded-tl-3xl lg:rounded-bl-none lg:rounded-r-none -mr-4 sm:-mr-6 lg:-mr-8 lg:h-[520px]" style={{ boxShadow: '-6px 4px 32px 0px rgba(142, 142, 142, 0.25)' }}>
+          <img className="w-[200%] lg:w-full max-w-none rounded-l-3xl lg:rounded-tl-3xl lg:rounded-bl-none lg:rounded-r-none object-cover object-left h-full lg:h-[700px]" src="business_dashboard.png" alt="Dashboard Overview" />
+        </div>
       </div>
     </section>
   );
