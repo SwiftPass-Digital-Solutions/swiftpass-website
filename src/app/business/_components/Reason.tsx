@@ -2,32 +2,32 @@ export default function Reason() {
   const cards = [
     {
       image: "spsn.png",
-      alt: "Your SPSN card",
-      caption: "No more repetitively verifying identity documents",
+      alt: "Faster KYC",
+      caption: "Faster KYC onboarding = higher conversion rates",
     },
     {
       image: "vault.svg",
-      alt: "Document cards and management",
-      caption: "Easy updates and document management",
+      alt: "Secure, verifiable KYC data every time",
+      caption: "Secure, verifiable KYC data every time",
     },
     {
       image: "biodata.png",
-      alt: "SwiftPass encrypted PIN",
-      caption: "One encrypted PIN for all partner fintechs",
+      alt: "Reduced costs",
+      caption: "Reduced costs—no more manual document handling",
     },
     {
       image: "logs.png",
-      alt: "Recent activity and access logs",
-      caption: "Fully transparent access logs",
+      alt: "Trust continuity",
+      caption: "Offers trust continuity—users own their data, but you get verified access",
     },
   ];
 
   return (
-    <section className="py-12 px-4 sm:px-6 lg:px-8 lg:pt-18">
+    <section className="py-12 px-4 bg-white sm:px-6 lg:px-8 lg:pt-18">
       <h3 className="font-medium text-xl md:text-[32px] mb-12 text-center">
         Why Swiftpass for{' '}
         <span className="text-primary-500 relative">
-          Individuals
+          Business
           <svg
             className="absolute left-0 -bottom-3 w-full h-2"
             viewBox="0 0 144 8"

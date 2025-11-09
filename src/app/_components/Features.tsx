@@ -6,7 +6,7 @@ export default function Features() {
       title: "One Secure Vault",
       description: "Consolidate documents like BVN, NIN, passports, managed by you, shared securely with partners.",
       buttonText: "Get Started",
-      image: "vault.png",
+      image: "vault.svg",
       imageAlt: "Vault"
     },
     {

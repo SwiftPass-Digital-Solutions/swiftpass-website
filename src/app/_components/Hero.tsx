@@ -23,7 +23,6 @@ export default function Hero() {
                     </Button>
                 </div>
             </div>
-            {/* Make image not grow on small screens to avoid letterboxing on iOS; use absolute public path */}
             <img src="/hero.png" alt="Hero" className="block w-full h-auto md:flex-1 md:min-w-0 object-contain" />
         </div>
     </section>

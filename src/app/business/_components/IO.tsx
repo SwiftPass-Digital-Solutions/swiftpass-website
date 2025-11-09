@@ -1,35 +1,32 @@
-import Button from "../components/ui/Button";
+import Button from "@components/ui/Button";
 
-export default function HIW() {
+export default function IO() {
   const steps = [
     {
-      title: "Create Vault",
-      description: "Upload documents (NIN, BVN, passport) and verify with partners",
+      title: "API endpoint for PIN verification",
       buttonText: "Start free trial",
       image: "vault-dashboard.png",
-      imageAlt: "Vault Dashboard"
+      imageAlt: "Endpoint"
     },
-    {
-      title: "Generate your SwiftPass Secure Number (SPSN)",
-      description: "Get a secure, reusable SwiftPass PIN for onboarding",
-      buttonText: "Start free trial",
-      image: "spsn_blue.png",
-      imageAlt: "SPSN"
-    },
-    {
-      title: "Share and Onboard",
-      description: "Use SPSN at partner apps for instant verification.",
+     {
+      title: "SDK support (iOS, Android, Web)",
       buttonText: "Start free trial",
       image: "overview.png",
-      imageAlt: "Share and Onboard"
+      imageAlt: "SDK Support"
+    },
+    {
+      title: "Sandbox access for testing",
+      buttonText: "Start free trial",
+      image: "spsn_blue.png",
+      imageAlt: "Sandbox"
     }
   ];
   return (
     <section className="py-12 px-4 sm:px-6 lg:px-8 bg-[#F6F7FE]">
-      <h3 className="font-medisum text-[32px] mb-12 lg:mb-15 text-center">
-        How it{' '}
+      <h3 className="font-medium text-[32px] mb-12 lg:mb-15 text-center">
+        Integration{' '}
         <span className="text-primary-500 relative">
-          Works
+          Overview
           <svg 
             className="absolute left-0 -bottom-3 w-full h-2" 
             viewBox="0 0 144 8" 
@@ -50,7 +47,6 @@ export default function HIW() {
             </div>
             <div className="flex-1">
               <h4 className="font-medium text-xl">{step.title}</h4>
-              <p className="text-dark-200 text-sm">{step.description}</p>
             </div>
             <div>
               <Button
