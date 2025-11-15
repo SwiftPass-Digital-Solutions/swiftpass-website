@@ -51,15 +51,15 @@ export default function HIW() {
       </h3>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-18 max-w-4xl mx-auto">
         {steps.map((step, index) => (
-          <div key={index} className="flex flex-col">
-            <div className="flex-shrink-0">
-              <img src={step.image} alt={step.imageAlt} className="lg:w-full object-cover" />
+          <div key={index} className="flex flex-col items-center lg:items-start">
+            <div className="flex-shrink-0 w-full">
+              <img src={step.image} alt={step.imageAlt} className="w-full object-cover" />
             </div>
-            <div className="flex-1 mt-6">
+            <div className="flex-1 mt-6 text-left w-full">
               <h4 className="font-medium text-xl">{step.title}</h4>
               <p className="text-dark-200 text-sm">{step.description}</p>
             </div>
-            <div className="mt-4">
+            <div className="mt-4 w-full">
               <Button
                 isLink
                 linkUrl="https://swiftpass-web.vercel.app/register"

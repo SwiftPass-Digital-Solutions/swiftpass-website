@@ -22,7 +22,7 @@ export default function IO() {
     }
   ];
   return (
-    <section className="py-12 px-4 sm:px-6 lg:px-8 bg-[#F6F7FE]">
+    <section className="w-full py-12 px-4 sm:px-6 lg:px-8 bg-[#F6F7FE]">
       <h3 className="font-medium text-[32px] mb-12 lg:mb-15 text-center">
         Integration{' '}
         <span className="text-primary-500 relative">
