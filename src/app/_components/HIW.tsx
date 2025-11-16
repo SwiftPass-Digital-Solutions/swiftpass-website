@@ -32,7 +32,7 @@ export default function HIW() {
           Works
           <svg 
             className="absolute left-0 -bottom-3 w-full h-2" 
-            viewBox="0 0 144 8" 
+            viewBox="0 0 144 8"
             fill="none" 
             xmlns="http://www.w3.org/2000/svg"
             preserveAspectRatio="none"
@@ -44,9 +44,9 @@ export default function HIW() {
       </h3>
       <div className="flex flex-col lg:flex-row items-center gap-22">
         {steps.map((step, index) => (
-          <div key={index} className="flex flex-col gap-6">
-            <div className="flex-shrink-0">
-              <img src={step.image} alt={step.imageAlt} className="object-cover" />
+          <div key={index} className="flex flex-col gap-6 w-full lg:w-1/3">
+            <div className="flex-shrink-0 w-full">
+              <img src={step.image} alt={step.imageAlt} className="w-full h-auto object-cover" />
             </div>
             <div className="flex-1">
               <h4 className="font-medium text-xl">{step.title}</h4>
